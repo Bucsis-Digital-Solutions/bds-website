@@ -2,7 +2,7 @@ function About() {
     return (
         <>
             <div>
-                About Us
+                Under Construction
             </div>
         </>
     )
