@@ -85,8 +85,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <h1 className='text-xl text-center bg-[#1A1036] p-5 mt-[50px]'>Some of the tools in the tool box</h1>
-                <div className='flex flex-col md:flex-row md:justify-around items-center bg-[#1A1036] p-5 mb-[50px]'>
+                <h1 className='text-xl text-center bg-[#1A1036] p-5 mt-[50px] border-t border-t-[#777]'>Some of the tools in the tool box</h1>
+                <div className='flex flex-col md:flex-row md:justify-around items-center bg-[#1A1036] p-5'>
                     <a className='w-[250px] h-[50px]' href='https://www.appsmith.com/' target='_blank' rel='noreferrer'>
                         <img className='h-1/2 w-1/2 md:h-full md:w-full object-cover m-auto' src='appsmith-logo.png' alt='Appsmith Logo'></img>
                     </a>
@@ -102,6 +102,25 @@ function Home() {
                     <a className='w-[250px] h-[50px]' href='https://www.shopify.com/' target='_blank' rel='noreferrer'>
                         <img className='h-1/2 w-1/2 md:h-full md:w-full object-contain m-auto' src='shopify-logo.png' alt='Shopify Logo'></img>
                     </a>
+                </div>
+                <h1 className='text-xl text-center bg-[#1A1036] p-5 pt-[50px]'>Here's what our clients are saying about us</h1>
+                <div className='flex justify-around items-center bg-[#1A1036] p-5'>
+                    <div className='flex flex-col justify-center items-center'>
+                        <a className='rounded-full' href='https://friendlypestcontrolaz.com/' target='_blank' rel='noreferrer'>
+                            <img className='w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-full object-cover m-auto' src='matt-fpc.jpg' alt='Friendly Pest Control'></img>
+                        </a>
+                        <div>
+                            Matt Abney
+                        </div>
+                        <div>
+                            Friendly Pest Control
+                        </div>
+                    </div>
+                </div>
+                <div className='h-[410px] md:h-[230px] lg:h-[150px] p-5 bg-[#1A1036]'>
+                    <div id='testimonial' className='md:w-3/4 m-auto text-center'>
+                        Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come.
+                    </div>
                 </div>
             </div>
             <div className='w-screen md:w-3/4 m-auto'>
