@@ -1,8 +1,27 @@
+import { useState } from 'react'
 import { FaEnvelope, FaPhone, FaWhatsapp, FaSquareUpwork } from 'react-icons/fa6'
 import { SlSpeedometer } from "react-icons/sl";
 import { PiArrowFatLinesUpFill, PiPlugsConnected } from "react-icons/pi";
 
+const reviews = [
+    {
+        name: "Matt Abney",
+        company: "Friendly Pest Control",
+        url: "https://friendlypestcontrolaz.com/",
+        img: "matt-fpc.jpg",
+        text: "Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come."
+    },
+    {
+        name: "Brennan Morrow",
+        company: "CEO, Christmas Lights Factory | BrightWrx Inc | High Level Worx Inc",
+        url: "https://brightwrx.com",
+        img: "brennan-bwrx.png",
+        text: "Robert and I have been working together for years. He's one of the sharpest technology and systems minds I've ever encountered. Robert has been instrumental in helping my businesses systemize, optimize, and build custom operating systems that surpass anything else in our industries. His responsiveness is exceptional—he's gone the extra mile countless times during critical data or systems crises, always ensuring everything is back up and running without fail. Beyond his technical expertise, Robert has saved me from costly oversights more times than I can count. His insights and attention to detail catch things I would have missed, making him invaluable not just as a technical expert, but as a strategic partner. For context, I own multiple businesses and work with hundreds of clients worldwide. I run Christmas Lights Factory, built and sold a skylight installation business, and operate technology companies (including BrightWrx and High Level Worx) that help clients optimize their CRMs, operating systems, and SaaS businesses. Every single one of these ventures has relied on Robert's expertise to achieve exceptional results and establish me as a foremost authority in my industries. Robert is absolutely my go-to expert for everything involving top-tier technology. I can't recommend him highly enough."
+    }
+]
+
 function Home() {
+    const [activeIndex, setActiveIndex] = useState(0)
     const sendMessage = (ev) => {
         ev.preventDefault()
         const form = document.getElementById('contact-form')
@@ -104,22 +123,29 @@ function Home() {
                     </a>
                 </div>
                 <h1 className='text-xl text-center bg-[#1A1036] p-5 pt-[50px]'>Here's what our clients are saying about us</h1>
-                <div className='flex justify-around items-center bg-[#1A1036] p-5'>
-                    <div className='flex flex-col justify-center items-center'>
-                        <a className='rounded-full' href='https://friendlypestcontrolaz.com/' target='_blank' rel='noreferrer'>
-                            <img className='w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-full object-cover m-auto' src='matt-fpc.jpg' alt='Friendly Pest Control'></img>
-                        </a>
-                        <div>
-                            Matt Abney
-                        </div>
-                        <div>
-                            Friendly Pest Control
+                <div className='flex justify-center items-center bg-[#1A1036] p-5'>
+                {reviews.map((item, index) => (
+                    <div key={index} onClick={() => setActiveIndex(index)} className={`cursor-pointer transition-all duration-300 transform ${activeIndex === index ? 'scale-110 opacity-100' : 'scale-90 opacity-50'}`}>
+                        <div className='flex flex-col justify-center items-center m-5'>
+                            <img className={`w-[50px] h-[50px] md:w-[100px] md:h-[100px] rounded-full object-cover border-4 ${activeIndex === index ? 'border-purple-500' : 'border-transparent'}`} src={item.img} alt={item.name}></img>
+                            <div className={`text-center text-xs mt-2 ${activeIndex === index ? 'block' : 'hidden md:block'}`}>
+                                {item.name}
+                            </div>
                         </div>
                     </div>
+                ))}
                 </div>
-                <div className='h-[410px] md:h-[230px] lg:h-[150px] p-5 bg-[#1A1036]'>
-                    <div id='testimonial' className='md:w-3/4 m-auto text-center'>
-                        Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come.
+                <div className='min-h-[250px] md:min-h-[150px] p-5 bg-[#1A1036] '>
+                    <div className='md:w-3/4 m-auto text-center animate-fadeIn'>
+                    <p className='italic text-lg mb-4'>"{reviews[activeIndex].text}"</p>
+                    <a 
+                        href={reviews[activeIndex].url} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="font-bold text-purple-400 hover:underline"
+                    >
+                        {reviews[activeIndex].name} - {reviews[activeIndex].company}
+                    </a>
                     </div>
                 </div>
             </div>
