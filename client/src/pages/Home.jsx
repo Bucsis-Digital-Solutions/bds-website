@@ -12,6 +12,13 @@ const reviews = [
         text: "Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come."
     },
     {
+        name: "Roman Krugovykh",
+        company: "Collette Home LLC",
+        url: "https://colletteconsignment.com/",
+        img: "roman-cc.jfif",
+        text: "Robert Bucsis has helped us immensely over the years, beginning with his work getting our automated shipping up and running on our website (no easy feat with our one-of-a-kind and constantly changing inventory). Since then I have come to rely on Robert for all our store's web development needs. He is always up to a challenge, and on top of his consistently excellent and prompt work, he is totally transparent, and simply a joy to work with. "
+    },
+    {
         name: "Brennan Morrow",
         company: "CEO, Christmas Lights Factory | BrightWrx Inc | High Level Worx Inc",
         url: "https://brightwrx.com",
