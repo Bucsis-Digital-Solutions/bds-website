@@ -12,6 +12,13 @@ const reviews = [
         text: "Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come."
     },
     {
+        name: "Amanda Godward",
+        company: "Ecotelligent Software",
+        url: "https://ecotelligentsoftware.com/",
+        img: "amanda-eco.png",
+        text: "Superior Client Support for All Sizes of Software Solutions! Over the past five years, the Bucsis Digital Team helped me develop a cost-effective, simple software solution for my company, and expand it into a complex, multi-user interface system with paid users. They continue to provide a personal approach with attention to detail as our software grows. Rob provides transparent pricing with quick, professional responses to technical issues and always meets deadlines. It's been a pleasure working with Rob and he continues to impress with his technical expertise and passion for software development."
+    },
+    {
         name: "Roman Krugovykh",
         company: "Collette Home LLC",
         url: "https://colletteconsignment.com/",
