@@ -3,6 +3,8 @@ import Nav from './components/Navigation.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 
+// This is a comment for testing
+
 function App() {
   return (
     <BrowserRouter>
