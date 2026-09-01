@@ -12,11 +12,11 @@ const reviews = [
         text: "Rob Bucsis of Bucsis Digital has been an outstanding partner for our business. He built a custom quoting platform in AppSheet that allows us to present multiple options to customers for our rodent and bat proofing services, which has significantly improved our professionalism and efficiency. Rob is always responsive and quick to resolve anything we need—especially when timing is critical. He approaches every project and adjustment with enthusiasm and a solutions-focused mindset. We truly enjoy working with Rob and look forward to continuing our relationship for years to come."
     },
     {
-        name: "Amanda Godward",
-        company: "Ecotelligent Software",
-        url: "https://ecotelligentsoftware.com/",
-        img: "amanda-eco.png",
-        text: "Superior Client Support for All Sizes of Software Solutions! Over the past five years, the Bucsis Digital Team helped me develop a cost-effective, simple software solution for my company, and expand it into a complex, multi-user interface system with paid users. They continue to provide a personal approach with attention to detail as our software grows. Rob provides transparent pricing with quick, professional responses to technical issues and always meets deadlines. It's been a pleasure working with Rob and he continues to impress with his technical expertise and passion for software development."
+        name: "Jim Erickson",
+        company: "President, Solar Light Inc",
+        url: "https://solarlightinc.com/",
+        img: "sli-logo.png",
+        text: "I've worked with Robert at Bucis Digital Solutions on and off since 2024, and much more closely recently. He is exceptionally responsive, turns projects around quickly, and is always available when we need support or adjustments to our digital platforms. Robert consistently goes above and beyond, is genuinely friendly and accommodating, and makes the process easy. I also find his pricing to be very competitive. I highly recommend him to any business looking for reliable, high-quality digital support."
     },
     {
         name: "Roman Krugovykh",
@@ -24,6 +24,27 @@ const reviews = [
         url: "https://colletteconsignment.com/",
         img: "roman-cc.jfif",
         text: "Robert Bucsis has helped us immensely over the years, beginning with his work getting our automated shipping up and running on our website (no easy feat with our one-of-a-kind and constantly changing inventory). Since then I have come to rely on Robert for all our store's web development needs. He is always up to a challenge, and on top of his consistently excellent and prompt work, he is totally transparent, and simply a joy to work with. "
+    },
+    {
+        name: "Amanda Godward",
+        company: "Ecotelligent Software",
+        url: "https://ecotelligentsoftware.com/",
+        img: "amanda-eco.png",
+        text: "Superior Client Support for All Sizes of Software Solutions! Over the past five years, the Bucsis Digital Team helped me develop a cost-effective, simple software solution for my company, and expand it into a complex, multi-user interface system with paid users. They continue to provide a personal approach with attention to detail as our software grows. Rob provides transparent pricing with quick, professional responses to technical issues and always meets deadlines. It's been a pleasure working with Rob and he continues to impress with his technical expertise and passion for software development."
+    },
+    {
+        name: "Jonathan Fishpaw",
+        company: "Splash Elite Industries",
+        url: "https://www.splashelite.com/",
+        img: "jonathan-sei.jfif",
+        text: "Robert built the AppSheet platform that now serves as the operational backbone of Splash Elite Industries. He helped transform our paper-based processes into a streamlined system that handles order tracking, inventory management, workflow automation, ticket printing, and billing. The billing automation alone saves me several hours every month, and the custom solution has allowed me to avoid expensive software subscriptions that still wouldn't fit my business as well. Robert is responsive, technically strong, and has a knack for understanding business problems even when I can't fully articulate them myself. If you're looking for an AppSheet expert who can build systems that grow with your business, I highly recommend working with Robert."
+    },
+    {
+        name: "Brittani Smith Rios",
+        company: "BRS Office Solutions LLC",
+        url: null,
+        img: "brittani-brs.jpeg",
+        text: "Robert has been absolutely amazing to work with. His skills as a developer are top notch. Every idea I've come up with, he's turned into reality. He's transformed our app into something that's not only functional but genuinely easy to use, and his care for the back end is just as apparent as his design work. He genuinely cares about getting things right and making them work as well as they possibly can. On top of all that, he's extremely responsive and a pleasure to work with. We feel so lucky to have been introduced to him."
     },
     {
         name: "Brennan Morrow",
